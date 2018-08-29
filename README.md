@@ -25,6 +25,25 @@ class MyRecord < ApplicationRecord
  include Archivable::Model 
 ```
 
+Add to routes:
+
+```
+concern :archivable do
+  member do
+    delete :archive
+    post :restore
+  end
+end
+```
+
+And use like a boss:
+
+```
+resources :clients do
+  concerns :archivable
+end
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
