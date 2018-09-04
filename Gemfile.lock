@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    archivable (0.1.2)
+    dapi-archivable (0.1.2)
       activerecord
       activesupport
 
@@ -33,8 +33,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  archivable!
   bundler (~> 1.16)
+  dapi-archivable!
   minitest (~> 5.0)
   rake (~> 10.0)
 
