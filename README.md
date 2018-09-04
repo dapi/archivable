@@ -9,7 +9,7 @@ Add common methods to archive models.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'archivable'
+gem 'dapi-archivable'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install archivable
+    $ gem install dapi-archivable
 
 ## Usage
 

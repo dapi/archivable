@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "archivable/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "archivable"
+  spec.name          = "dapi-archivable"
   spec.version       = Archivable::VERSION
   spec.authors       = ["Danil Pismenny"]
   spec.email         = ["danil@brandymint.ru"]
