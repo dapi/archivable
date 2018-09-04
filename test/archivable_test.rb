@@ -6,6 +6,8 @@ class ArchivableTest < Minitest::Test
   end
 
   def test_it_does_something_useful
-    assert false
+    model = Class.new ::ActiveRecord::Base
+    model.send :include, Archivable
+    assert model.respond_to? :restore_all!
   end
 end

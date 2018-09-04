@@ -1,6 +1,8 @@
 # Archivable
 
-Gem adds common method to archive models.
+[![Build Status](https://travis-ci.org/BrandyMint/archivable.svg)](https://travis-ci.org/search/archivable)
+
+Add common methods to archive models.
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ```
 class MyRecord < ApplicationRecord
- include Archivable::Model 
+ include Archivable
 ```
 
 Add to routes:
