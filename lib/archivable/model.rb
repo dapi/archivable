@@ -43,7 +43,7 @@ module Archivable
     end
 
     def alive?
-      !! archived_at?
+      ! archived?
     end
 
     def alive_presence
