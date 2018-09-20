@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dapi-archivable (0.1.2)
+    dapi-archivable (0.1.3)
       activerecord
       activesupport
 
