@@ -27,6 +27,12 @@ class MyRecord < ApplicationRecord
  include Archivable
 ```
 
+Create and run migration:
+
+```
+> rails g migration AddArchivedAtToMyRecords archived_at:timestamp
+```
+
 Add to routes:
 
 ```
