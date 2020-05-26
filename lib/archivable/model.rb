@@ -3,7 +3,7 @@ module Archivable
     extend ActiveSupport::Concern
 
     included do
-      scope :archive, -> { where("#{table_name}.archived_at is not null" }
+      scope :archive, -> { where("#{table_name}.archived_at is not null") }
       scope :alive,   -> { where("#{table_name}.archived_at: nil") }
     end
 
