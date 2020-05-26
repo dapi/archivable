@@ -4,7 +4,7 @@ module Archivable
 
     included do
       scope :archive, -> { where("#{table_name}.archived_at is not null") }
-      scope :alive,   -> { where("#{table_name}.archived_at: nil") }
+      scope :alive,   -> { where("#{table_name}.archived_at is null") }
     end
 
     class_methods do
